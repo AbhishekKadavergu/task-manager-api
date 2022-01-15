@@ -1,0 +1,76 @@
+[
+    {
+        "name": "Ram",
+        "email": "Ram@gmail.com",
+        "place": "Hyderabad",
+        "Marks": 67,
+        "age": 19
+    },
+    {
+        "name": "Bob",
+        "email": "bob32@gmail.com",
+        "place": "Hyderabad",
+        "Marks": 78,
+        "age": 19
+    },
+    {
+        "name": "Sursan",
+        "email": "sursan@gmail.com",
+        "place": "Nirmal",
+        "Marks": 75,
+        "age": 20
+    },
+    {
+        "name": "Harsha",
+        "email": "harsha@gmail.com",
+        "place": "Miyapur",
+        "Marks": 70,
+        "age": 18
+    },
+    {
+        "name": "Narendra",
+        "email": "narendra@gmail.com",
+        "place": "Bathulapalli",
+        "Marks": 90,
+        "age": 21
+    },
+    {
+        "name": "Bob",
+        "email": "bob32@gmail.com",
+        "place": "Hyderabad",
+        "Marks": 67,
+        "age": 19
+    },
+    {
+        "name": "Ram",
+        "email": "Ram@gmail.com",
+        "place": "Hyderabad",
+        "Marks": 67,
+        "age": 19
+    },
+    {
+        "name": "Bob",
+        "email": "bob32@gmail.com",
+        "place": "Hyderabad",
+        "Marks": 67,
+        "age": 19
+    },
+    {
+        "name": "Ram",
+        "email": "Ram@gmail.com",
+        "place": "Hyderabad",
+        "Marks": 67,
+        "age": 19
+    },
+    {
+        "name": "Bob",
+        "email": "bob32@gmail.com",
+        "place": "Hyderabad",
+        "Marks": 67,
+        "age": 19
+    }
+
+
+
+
+]
