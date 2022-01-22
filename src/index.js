@@ -1,4 +1,6 @@
 const express = require("express");
+var cors = require('cors')
+
 require("./db/mongoose")
 const userRouter = require('./routes/user')
 const taskRouter = require('./routes/task')
@@ -13,8 +15,10 @@ const PORT = process.env.PORT
 //     res.send("Under maintanance")
 // })
 app.use(express.json())
+app.use(cors())
 app.use(userRouter)
 app.use(taskRouter)
+
 
 
 app.get('/hello', (req, res) => {
