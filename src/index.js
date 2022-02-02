@@ -1,5 +1,7 @@
 const express = require("express");
 var cors = require('cors')
+const Task = require('./models/task')
+
 
 require("./db/mongoose")
 const userRouter = require('./routes/user')
@@ -21,15 +23,21 @@ app.use(taskRouter)
 
 
 
-app.get('/hello', (req, res) => {
-    res.send({
-        name: "Abhishek"
-    })
+app.get('/hello', async(req, res) => {
+    try {
+        const tasks = await Task.find({})
+        if (!tasks) {
+            throw new Error()
+        }
+        res.send(tasks)
+
+    } catch (error) {
+        res.send(500)
+
+    }
 })
 
 
 app.listen(PORT, () => {
     console.log("Node app is running on ", PORT)
 })
-
-
