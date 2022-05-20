@@ -1,4 +1,5 @@
 const mongoose = require('mongoose')
+const validator = require("validator");
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken')
 const Task = require('./task')
@@ -12,9 +13,14 @@ const userSchema = mongoose.Schema({
     },
     email: {
         type: String,
-        required: true,
+        unique: true,
+        lowercase: true,
         trim: true,
-        unique: true
+        validate(value) {
+            if (!validator.isEmail(value)) {
+                throw new Error("Invalid email");
+            }
+        },
     },
     password: {
         type: String,
