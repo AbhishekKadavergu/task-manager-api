@@ -51,10 +51,13 @@ router.get("/tasks", auth, async(req, res) => {
         //     }
         // })
         await req.user.populate('tasks')
+        if (req.user.tasks.length === 0) {
+            throw new Error("No tasks found")
+        }
         res.status(200).send(req.user.tasks)
 
     } catch (error) {
-        res.status(500).send(error)
+        res.status(500).send(error.message)
     }
 })
 
